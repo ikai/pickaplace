@@ -7,6 +7,7 @@ from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'pickaplace.pick.views.home', name='home'),
+    url(r'^venue_search/', 'pickaplace.pick.views.venue_search', name='venue_search'),
     # url(r'^pickaplace/', include('pickaplace.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

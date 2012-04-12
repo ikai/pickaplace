@@ -11,6 +11,16 @@ PAP.onReady = function() {
 		source: availableCities
 	});
 
+	$( "#venueSelect" ).autocomplete({
+		source: "/venue_search",
+		minLength: 2,
+		select: function( event, ui ) {
+				console.log( ui.item ?
+					"Selected: " + ui.item.value + " aka " + ui.item.id :
+					"Nothing selected, input was " + this.value );
+			}
+	});
+
 	// check for Geolocation support
 	if (navigator.geolocation) {
 	  console.log('Geolocation is supported!');
