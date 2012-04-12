@@ -1,4 +1,4 @@
-# Django settings for pickaplace project.
+import local_settings
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -144,3 +144,6 @@ LOGGING = {
         },
     }
 }
+
+CLIENT_ID = local_settings.CLIENT_ID
+CLIENT_SECRET = local_settings.CLIENT_SECRET

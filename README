@@ -1,0 +1,3 @@
+This is me just fooling around with foursquare's Venue API. 
+
+Rename local_settings.py.template to local_settings with your client key and secret.
