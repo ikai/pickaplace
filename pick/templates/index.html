@@ -3,8 +3,13 @@
 	<head>
 	    <title>Pick a Place : a foursquare mashup</title>
    		<link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+
 	    <script src="/static/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-	    <script src="/static/js/pickaplace.js" type="text/javascript"></script>
+	    <script src="/static/js/jquery-ui-1.8.18.custom.js" type="text/javascript"></script>
+	    <!-- <script src="/static/js/jquery.ui.autocomplete.js" type="text/javascript"></script> -->
+	   	<script src="/static/js/pickaplace.js" type="text/javascript"></script>
 	    <script type="text/javascript">
 	    	$(document).ready(PAP.onReady)
 	    </script>
@@ -35,7 +40,13 @@
 	      <!-- Main hero unit for a primary marketing message or call to action -->
 	      <div class="hero-unit">
 	        <h1>Pick A Place</h1>
-	        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+	        <p>This app exists to help make it easier for you and your friends to decide on a restaurant.</p>
+
+	        <div class="ui-widget">
+				<label for="citySelect">Your current city: </label>
+				<input id="citySelect" />
+			</div>
+
 	        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 	      </div>
 
@@ -72,3 +83,4 @@
 	    <script src="/static/js/bootstrap.js"></script>
   </body>
 </html>
+

@@ -1,5 +1,16 @@
 var PAP = {};
 PAP.onReady = function() {
+	var availableCities = [
+			"San Francisco",
+			"New York City",
+			"Chicago",
+			"Los Angeles"
+	];
+
+	$( "#citySelect" ).autocomplete({
+		source: availableCities
+	});
+
 	// check for Geolocation support
 	if (navigator.geolocation) {
 	  console.log('Geolocation is supported!');
